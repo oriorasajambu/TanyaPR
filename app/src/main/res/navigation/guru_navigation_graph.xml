@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guru_navigation_graph"
+    app:startDestination="@id/home_guru">
+
+    <fragment
+        android:id="@+id/home_guru"
+        android:name="com.example.tanyapr.view.user.guru.fragment.HomeGuruFragment"
+        android:label="home_guru_fragment"
+        tools:layout="@layout/home_guru_fragment" />
+    <fragment
+        android:id="@+id/pertanyaan_guru"
+        android:name="com.example.tanyapr.view.user.guru.fragment.PertanyaanGuruFragment"
+        android:label="pertanyaan_guru_fragment"
+        tools:layout="@layout/pertanyaan_guru_fragment" />
+    <fragment
+        android:id="@+id/setting_guru"
+        android:name="com.example.tanyapr.view.user.guru.fragment.SettingGuruFragment"
+        android:label="setting_guru_fragment"
+        tools:layout="@layout/setting_guru_fragment" />
+    <fragment
+        android:id="@+id/jawabFragment"
+        android:name="com.example.tanyapr.view.user.guru.fragment.JawabFragment"
+        android:label="jawab_fragment"
+        tools:layout="@layout/jawab_fragment" />
+    <fragment
+        android:id="@+id/exchangeFragment"
+        android:name="com.example.tanyapr.view.user.guru.fragment.ExchangeFragment"
+        android:label="exchange_fragment"
+        tools:layout="@layout/exchange_fragment" >
+        <action
+            android:id="@+id/action_exchangeFragment_to_home_guru"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/guru_navigation_graph"
+            app:destination="@id/home_guru" />
+    </fragment>
+</navigation>

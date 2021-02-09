@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_navigation_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.tanyapr.view.admin.fragment.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_userFragment"
+            app:destination="@id/user" />
+    </fragment>
+    <fragment
+        android:id="@+id/user"
+        android:name="com.example.tanyapr.view.admin.fragment.UserFragment"
+        android:label="user_fragment"
+        tools:layout="@layout/user_fragment" >
+        <action
+            android:id="@+id/action_userFragment_to_topUpFragment"
+            app:destination="@id/topup" />
+    </fragment>
+    <fragment
+        android:id="@+id/topup"
+        android:name="com.example.tanyapr.view.admin.fragment.TopUpFragment"
+        android:label="top_up_fragment"
+        tools:layout="@layout/top_up_fragment" >
+        <action
+            android:id="@+id/action_topUpFragment_to_settingFragment"
+            app:destination="@id/setting" />
+    </fragment>
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.tanyapr.view.admin.fragment.SettingFragment"
+        android:label="setting_fragment"
+        tools:layout="@layout/setting_fragment" />
+    <dialog
+        android:id="@+id/homeBottomFragment"
+        android:name="com.example.tanyapr.view.admin.tools.HomeBottomFragment"
+        android:label="home_bottom_fragment"
+        tools:layout="@layout/home_bottom_fragment"/>
+    <dialog
+        android:id="@+id/homeDialogFragment"
+        android:name="com.example.tanyapr.view.admin.tools.HomeDialogFragment"
+        android:label="home_dialog_fragment" />
+</navigation>

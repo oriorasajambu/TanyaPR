@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "90777661755",
+    "project_id": "tanyapr-4ece7",
+    "storage_bucket": "tanyapr-4ece7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90777661755:android:f0cc98c990ce224f41071e",
+        "android_client_info": {
+          "package_name": "com.example.tanyapr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90777661755-e7p7c04dcq4n0dpabdl1sivhd6qa1kks.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tanyapr",
+            "certificate_hash": "de98fc5645579e24c1ba0a095164f962ef8fb3fc"
+          }
+        },
+        {
+          "client_id": "90777661755-v6ea18ueo2o6i0kb87jn8jml85jfmo24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsQybZtUeXRJ_4ny9plK-Y34Tqy4O8fGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90777661755-v6ea18ueo2o6i0kb87jn8jml85jfmo24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

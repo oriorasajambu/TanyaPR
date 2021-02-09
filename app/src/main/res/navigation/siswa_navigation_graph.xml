@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/siswa_navigation_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.tanyapr.view.user.siswa.fragment.HomeSiswaFragment"
+        android:label="home_siswa_fragment"
+        tools:layout="@layout/home_siswa_fragment" >
+        <action
+            android:id="@+id/action_homeSiswaFragment_to_pertanyaanFragment"
+            app:destination="@id/pertanyaan" />
+    </fragment>
+    <fragment
+        android:id="@+id/pertanyaan"
+        android:name="com.example.tanyapr.view.user.siswa.fragment.PertanyaanFragment"
+        android:label="pertanyaan_fragment"
+        tools:layout="@layout/pertanyaan_fragment" >
+        <action
+            android:id="@+id/action_pertanyaanFragment_to_infoFragment"
+            app:destination="@id/info" />
+    </fragment>
+    <fragment
+        android:id="@+id/info"
+        android:name="com.example.tanyapr.view.user.siswa.fragment.InfoFragment"
+        android:label="info_fragment"
+        tools:layout="@layout/info_fragment" >
+        <action
+            android:id="@+id/action_infoFragment_to_historyTopUpFragment"
+            app:destination="@id/top_history" />
+    </fragment>
+    <fragment
+        android:id="@+id/top_history"
+        android:name="com.example.tanyapr.view.user.siswa.fragment.HistoryTopUpFragment"
+        android:label="history_top_up_fragment"
+        tools:layout="@layout/history_top_up_fragment" />
+    <fragment
+        android:id="@+id/settingSiswaFragment"
+        android:name="com.example.tanyapr.view.user.siswa.fragment.SettingSiswaFragment"
+        android:label="setting_siswa_fragment"
+        tools:layout="@layout/setting_siswa_fragment" />
+    <fragment
+        android:id="@+id/insertPertanyaanFragment"
+        android:name="com.example.tanyapr.view.user.siswa.tools.InsertPertanyaanFragment"
+        android:label="insert_pertanyaan_fragment"
+        tools:layout="@layout/insert_pertanyaan_fragment" />
+    <fragment
+        android:id="@+id/insertTopUpFragment"
+        android:name="com.example.tanyapr.view.user.siswa.tools.InsertTopUpFragment"
+        android:label="insert_top_up_fragment"
+        tools:layout="@layout/insert_top_up_fragment" />
+    <fragment
+        android:id="@+id/jawabanFragment"
+        android:name="com.example.tanyapr.view.user.siswa.fragment.JawabanFragment"
+        android:label="jawaban_fragment"
+        tools:layout="@layout/jawaban_fragment" >
+    </fragment>
+    <dialog
+        android:id="@+id/confirmationDialogFragment"
+        android:name="com.example.tanyapr.view.user.siswa.fragment.ConfirmationDialogFragment"
+        android:label="confirmation_dialog_fragment"
+        tools:layout="@layout/confirmation_dialog_fragment" >
+        <action
+            android:id="@+id/action_confirmationDialogFragment_to_home"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/siswa_navigation_graph"
+            app:destination="@id/home" />
+    </dialog>
+</navigation>

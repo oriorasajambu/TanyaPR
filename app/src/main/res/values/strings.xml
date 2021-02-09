@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Tanya PR</string>
+    <string name="copyright">Copyright © 2021 oriorasajambu</string>
+    <string name="login_heading">Login and connect with other user around the globe</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="register_label">Don\'t have an account?</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="title_page">Welcome, %s</string>
+    <string name="sapa">Hi, %s</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="nama_pelajaran">Nama Pelajaran</string>
+    <string name="kode_pelajaran">Kode Pelajaran</string>
+    <string name="koin">Koin</string>
+    <string name="nama_guru">Nama Guru : %s</string>
+    <string name="nama_siwa">Nama Siswa : %s</string>
+    <string name="name">Username : %s</string>
+    <string name="universitas">Universitas : %s</string>
+    <string name="sekolah">Sekolah : %s</string>
+    <string name="created">Created : %s</string>
+    <string name="uploaded_at">Upload At : %s</string>
+    <string name="idr">IDR : %s</string>
+    <string name="coin">Koin : %s</string>
+    <string name="guru">Guru</string>
+    <string name="siswa">Siswa</string>
+    <string name="new_username">New Username</string>
+    <string name="change_password">Change Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_pasword">Confirm Pasword</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="uni">Universitas</string>
+    <string name="school">Sekolah</string>
+    <string name="semester">Semester</string>
+    <string name="agreement">Saya telah membaca syarat dan ketentuan Aplikasi dan ingin mengajukan diri sebagai guru di Aplikasi Tanya PR</string>
+    <string name="agreement2">Saya telah membaca syarat dan ketentuan Aplikasi dan ingin mengajukan diri sebagai siswa di Aplikasi Tanya PR</string>
+    <string name="kelas">Kelas</string>
+    <string name="email">Email</string>
+    <string name="no_rekening">No. Rekening</string>
+    <string name="unggah_bukti_transfer">Unggah Bukti Transfer</string>
+    <string name="upload">Upload</string>
+    <string name="label_role">Role :</string>
+    <string name="register_undraw">Register Undraw</string>
+    <string name="mata_pelajaran">Mata Pelajaran :</string>
+    <string name="label_rekening">Rekening :</string>
+    <string name="shop">Shop</string>
+    <string name="label_tanya_pr">Tanyakan PR mu disini</string>
+    <string name="welcome_message">Selamat Datang, %s</string>
+    <string name="pesan_dari_tim_tanya_pr">Pesan dari Tim Tanya PR :</string>
+    <string name="current_coin">Jumlah Coin : %s</string>
+    <string name="agreement3">Silahkan transfer sejumlah coin yang diinginkan, kemudian unggah Bukti Transfer Pulsa/Rek/Gopay</string>
+    <string name="default_notification_channel_id">8080</string>
+
+    <string-array name="role">
+        <item>Guru</item>
+        <item>Siswa</item>
+    </string-array>
+
+    <string-array name="rekening">
+        <item>BNI</item>
+        <item>MANDIRI</item>
+        <item>BRI</item>
+    </string-array>
+</resources>
